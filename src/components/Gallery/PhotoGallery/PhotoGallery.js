@@ -25,7 +25,10 @@ const PhotoGallery = () => {
   return (
     <div>
       <div className="container">
-        <div className="row">
+        <div className="row" style={{ margin: "60px 0" }}>
+          <h2 style={{ marginBottom: "1rem" }}>
+            Photo <span style={{ color: "#f37335" }}>Gallery</span>{" "}
+          </h2>
           <div className="col">
             <div className="gallery-wrapper">
               <div className="big">
