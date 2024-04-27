@@ -19,7 +19,7 @@ import img17 from "../../images/photo-gallery/17.jpg";
 import img18 from "../../images/photo-gallery/18.jpg";
 import img19 from "../../images/photo-gallery/19.jpg";
 import img20 from "../../images/photo-gallery/20.jpg";
-import "./PhotoGallery.css";
+import classes from "./PhotoGallery.module.css";
 
 const PhotoGallery = () => {
   return (
@@ -30,11 +30,11 @@ const PhotoGallery = () => {
             Photo <span style={{ color: "#f37335" }}>Gallery</span>{" "}
           </h2>
           <div className="col">
-            <div className="gallery-wrapper">
-              <div className="big">
+            <div className={classes["gallery-wrapper"]}>
+              <div className={classes.big}>
                 <img src={img1} alt="img1" />
               </div>
-              <div className="wide">
+              <div className={classes.wide}>
                 <img src={img2} alt="img2" />
               </div>
               <div>
@@ -70,7 +70,7 @@ const PhotoGallery = () => {
               <div>
                 <img src={img13} alt="img13" />
               </div>
-              <div className="tall">
+              <div className={classes.tall}>
                 <img src={img14} alt="img14" />
               </div>
               <div>
@@ -80,7 +80,7 @@ const PhotoGallery = () => {
               <div>
                 <img src={img16} alt="img16" />
               </div>
-              <div className="big">
+              <div className={classes.big}>
                 <img src={img17} alt="img17" />
               </div>
               <div>
