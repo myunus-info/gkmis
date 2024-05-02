@@ -3,7 +3,7 @@ import logo from "./../images/logo.png";
 // import classes from "./Header.module.css";
 
 export default function Header() {
-  return (
+  return (<>
     <div
       className="bg-success"
       style={{ height: "80px", display: "flex", alignItems: "center" }}
@@ -128,6 +128,16 @@ export default function Header() {
                         style={{ color: "#fff" }}
                         className="nav-link active"
                         aria-current="page"
+                        to="/career"
+                      >
+                        Career
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        style={{ color: "#fff" }}
+                        className="nav-link active"
+                        aria-current="page"
                         to="/contact"
                       >
                         Contact
@@ -141,5 +151,6 @@ export default function Header() {
         </div>
       </div>
     </div>
+      <marquee direction='left' style={{color: 'yellow', backgroundColor: '#040720', fontWeight: '600', fontSize: '1.25rem', padding: '.5rem 0', marginBottom: '-.35rem'}}>Experienced Teachers Required for K M International School in Various Disciplines. Call: 01818-251075</marquee></>
   );
 }
