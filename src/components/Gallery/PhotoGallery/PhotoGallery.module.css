@@ -18,7 +18,6 @@
 .gallery-wrapper .tall {
   grid-row: span 2;
 }
-
 .gallery-wrapper > div {
   display: flex;
   justify-content: center;
