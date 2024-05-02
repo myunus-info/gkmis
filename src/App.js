@@ -9,6 +9,7 @@ import Notice from "./components/pages/Notice/Notice";
 import About from "./components/pages/About/About";
 import AllTeachers from "./components/Teachers/AllTeachers";
 import TeacherDetails from "./components/Teachers/TeacherDetails/TeacherDetails";
+import PhotoGallery from "./components/Gallery/PhotoGallery/PhotoGallery";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/teachers" element={<AllTeachers />} />
       <Route path="/teachers/:id" element={<TeacherDetails />} />
+      <Route path="/photo-gallery" element={<PhotoGallery />} />
     </Routes>
   );
 }

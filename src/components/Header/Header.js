@@ -96,6 +96,33 @@ export default function Header() {
                         Blog
                       </Link>
                     </li>
+                    <li className="nav-item dropdown">
+                      <Link
+                        className="nav-link dropdown-toggle"
+                        style={{ color: "#fff" }}
+                        to="/"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Gallery
+                      </Link>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <Link className="dropdown-item" to="/photo-gallery">
+                            Photo Gallery
+                          </Link>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider" />
+                        </li>
+                        <li>
+                          <Link className="dropdown-item" to="/video-gallery">
+                            Video Gallery
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
                     <li className="nav-item">
                       <Link
                         style={{ color: "#fff" }}
