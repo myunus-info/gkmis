@@ -1,12 +1,11 @@
-import Header from "../../Header/Header";
-import Footer from "../../Footer/Footer";
+import Layout from "../../Layout/Layout";
 
 export default function About() {
   return (
     <>
-      <Header />
-      <h1>This is About section</h1>
-      <Footer />
+      <Layout>
+        <h1>This is About section</h1>
+      </Layout>
     </>
   );
 }

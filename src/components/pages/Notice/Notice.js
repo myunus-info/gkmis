@@ -1,12 +1,11 @@
-import Footer from "../../Footer/Footer";
-import Header from "../../Header/Header";
+import Layout from "../../Layout/Layout";
 
 export default function Notice() {
   return (
     <>
-      <Header />
-      <h1>This is Notice page</h1>;
-      <Footer />
+      <Layout>
+        <h1>This is Notice page</h1>;
+      </Layout>
     </>
   );
 }

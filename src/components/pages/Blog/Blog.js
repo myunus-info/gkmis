@@ -1,12 +1,11 @@
-import Footer from "../../Footer/Footer";
-import Header from "../../Header/Header";
+import Layout from "../../Layout/Layout";
 
 export default function Blog() {
   return (
     <>
-      <Header />
-      <h1>This is Blog page</h1>;
-      <Footer />
+      <Layout>
+        <h1>This is Blog page</h1>;
+      </Layout>
     </>
   );
 }

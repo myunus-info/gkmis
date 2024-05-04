@@ -1,13 +1,12 @@
 import React from "react";
 import images from "./index";
-import Header from "../../Header/Header";
-import Footer from "../../Footer/Footer";
 import classes from "./PhotoGallery.module.css";
+import Layout from "../../Layout/Layout";
 
 const PhotoGallery = () => {
   return (
     <>
-      <Header />
+      <Layout>
       <div className="container">
         <div className="row" style={{ margin: "60px 0" }}>
           <h2 style={{ marginBottom: "1rem" }}>
@@ -24,7 +23,7 @@ const PhotoGallery = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      </Layout>
     </>
   );
 };

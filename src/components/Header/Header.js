@@ -151,6 +151,6 @@ export default function Header() {
         </div>
       </div>
     </div>
-      <marquee direction='left' style={{color: 'yellow', backgroundColor: '#040720', fontWeight: '600', fontSize: '1.25rem', padding: '.5rem 0', marginBottom: '-.35rem'}}>Experienced Teachers Required for K M International School in Various Disciplines. Call: 01818-251075</marquee></>
+      <marquee direction='left' style={{color: 'yellow', backgroundColor: '#040720', fontWeight: '600', fontSize: '1.25rem', padding: '.5rem 0', marginBottom: '-.35rem'}}>Experienced Teachers Required for Gopaldi K M International School in Various Disciplines. Call: 01818-251075</marquee></>
   );
 }
