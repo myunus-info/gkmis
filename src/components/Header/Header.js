@@ -67,15 +67,51 @@ export default function Header() {
                           Admission
                         </Link>
                       </li>
-                      <li className="nav-item">
+                      <li className="nav-item dropdown">
                         <Link
+                          className="nav-link dropdown-toggle"
                           style={{ color: "#fff" }}
-                          className="nav-link active"
-                          aria-current="page"
-                          to="/departments"
+                          to="/"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
                         >
                           Departments
                         </Link>
+                        <ul className="dropdown-menu">
+                          <li>
+                            <Link className="dropdown-item" to="/english-bgs">
+                              English &amp; BGS
+                            </Link>
+                          </li>
+                          <li>
+                            <hr className="dropdown-divider" />
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="/math-science">
+                              Math &amp; Science
+                            </Link>
+                          </li>
+                          <li>
+                            <hr className="dropdown-divider" />
+                          </li>
+                          <li>
+                            <Link
+                              className="dropdown-item"
+                              to="/islamic-studies"
+                            >
+                              Islamic Studies
+                            </Link>
+                          </li>
+                          <li>
+                            <hr className="dropdown-divider" />
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="/bangla">
+                              Bangla
+                            </Link>
+                          </li>
+                        </ul>
                       </li>
                       <li className="nav-item">
                         <Link
