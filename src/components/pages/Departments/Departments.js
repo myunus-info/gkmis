@@ -1,10 +1,10 @@
 import Layout from "../../Layout/Layout";
 
-export default function Academic() {
+export default function Departments() {
   return (
     <>
       <Layout>
-        <h1>This is Academic page</h1>
+        <h1>This is Department page</h1>
       </Layout>
     </>
   );
