@@ -1,0 +1,55 @@
+.eng-bgs-text {
+  margin: 3.5rem 0;
+}
+
+.eng-bgs-text ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.eng-bgs-text ul > li {
+  color: #343a40;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+.eng-bgs-text ul > li > img {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+.eng-bgs-text h5 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin: 32px 0 16px 0;
+  color: #000;
+}
+
+.eng-bgs-text h6 {
+  font-weight: 700;
+  border-bottom: 2px solid #ff6241;
+  display: inline;
+}
+
+.eng-bgs-text h3 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.eng-bgs-text .eng-bgs-text-big-title {
+  font-size: 57px;
+  line-height: 60px;
+}
+
+.eng-bgs-text p {
+  color: #343a40;
+  line-height: 32px;
+}
