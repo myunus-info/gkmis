@@ -1,0 +1,55 @@
+.bangla-text {
+  margin: 3.5rem 0;
+}
+
+.bangla-text ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bangla-text ul > li {
+  color: #343a40;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+.bangla-text ul > li > img {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+.bangla-text h5 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin: 32px 0 16px 0;
+  color: #000;
+}
+
+.bangla-text h6 {
+  font-weight: 700;
+  border-bottom: 2px solid #ff6241;
+  display: inline;
+}
+
+.bangla-text h3 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.bangla-text .bangla-text-big-title {
+  font-size: 57px;
+  line-height: 60px;
+}
+
+.bangla-text p {
+  color: #343a40;
+  line-height: 32px;
+}
