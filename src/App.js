@@ -8,7 +8,6 @@ import About from "./components/pages/About/About";
 import AllTeachers from "./components/Teachers/AllTeachers";
 import TeacherDetails from "./components/Teachers/TeacherDetails/TeacherDetails";
 import PhotoGallery from "./components/Gallery/PhotoGallery/PhotoGallery";
-import Departments from "./components/pages/Departments/Departments";
 import EnglishAndBGS from "./components/pages/Departments/EnglishAndBGS/EnglishAndBGS";
 import MathAndScience from "./components/pages/Departments/MathAndScience/MathAndScience";
 import IslamicStudies from "./components/pages/Departments/IslamicStudies/IslamicStudies";
@@ -20,7 +19,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/departments" element={<Departments />} />
       <Route path="/admission" element={<Admission />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/notice" element={<Notice />} />
