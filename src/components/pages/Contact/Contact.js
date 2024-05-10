@@ -1,7 +1,5 @@
 import React from "react";
 import Layout from "../../Layout/Layout";
-// import location from "../../icons/352521_location_on_icon.svg";
-// import location from "../../icons/location-2955.svg";
 import location from "../../icons/location-sign-svgrepo-com.svg";
 import phone from "../../icons/telephone.svg";
 import email from "../../icons/envelope.svg";
