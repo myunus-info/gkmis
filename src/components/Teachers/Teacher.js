@@ -4,7 +4,8 @@ import email from "../icons/envelope.svg";
 import { useNavigate } from "react-router-dom";
 
 export default function Teacher({ teacher }) {
-  const { id, image, name, designation, short_intro } = teacher || {};
+  const { id, image, name, education, designation, short_intro } =
+    teacher || {};
   const navigate = useNavigate();
 
   return (
@@ -28,6 +29,7 @@ export default function Teacher({ teacher }) {
           <h3 className="card-title" style={{ fontSize: "1.35rem" }}>
             {name}
           </h3>
+          <h5 style={{ fontSize: "1rem" }}>{education}</h5>
           <h5 className="card-title" style={{ fontSize: "1rem" }}>
             {designation}
           </h5>

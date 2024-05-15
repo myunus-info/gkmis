@@ -15,6 +15,7 @@ const TeacherDetails = () => {
   const {
     image,
     name,
+    education,
     email,
     address,
     designation,
@@ -106,6 +107,9 @@ const TeacherDetails = () => {
             <div className="col-md-8">
               <div>
                 <h3 style={{ color: "#523257" }}>{name}</h3>
+                <h5 style={{ color: "#523257", fontSize: "1rem" }}>
+                  {education}
+                </h5>
                 <h5 style={{ color: "#523257" }}>{designation}</h5>
                 <p style={{ color: "#3D3D3D" }}>{short_intro}</p>
 
