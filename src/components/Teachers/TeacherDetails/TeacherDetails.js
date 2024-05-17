@@ -7,6 +7,7 @@ import Footer from "../../Footer/Footer";
 import facebook from "../../icons/facebook.svg";
 import twitterX from "../../icons/twitter-x.svg";
 import envelope from "../../icons/envelope.svg";
+import Layout from "../../Layout/Layout";
 
 const TeacherDetails = () => {
   const { id } = useParams();
@@ -27,8 +28,7 @@ const TeacherDetails = () => {
   // console.log("Teacher ", teacher);
 
   return (
-    <>
-      <Header />
+    <Layout>
       <div style={{ margin: "3.5rem 0" }}>
         <div className="container">
           {/* First row */}
@@ -287,8 +287,7 @@ const TeacherDetails = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </Layout>
   );
 };
 
