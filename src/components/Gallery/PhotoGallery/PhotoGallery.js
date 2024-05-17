@@ -6,7 +6,7 @@ import Layout from "../../Layout/Layout";
 const PhotoGallery = () => {
   return (
     <Layout>
-      <div className="container">
+      <div className="container p-0">
         <div className="row" style={{ margin: "60px 0" }}>
           <h2 style={{ marginBottom: "1rem" }}>
             Photo <span style={{ color: "#f37335" }}>Gallery</span>

@@ -1,8 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import teachers from "../teacherData";
-import Header from "../../Header/Header";
-import Footer from "../../Footer/Footer";
 // Icons
 import facebook from "../../icons/facebook.svg";
 import twitterX from "../../icons/twitter-x.svg";

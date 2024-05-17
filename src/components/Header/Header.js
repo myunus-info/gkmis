@@ -33,14 +33,14 @@ const Header = () => {
               aria-labelledby="offcanvasNavbarLabel"
             >
               {/* Sidebar Header */}
-              <div className="bg-success text-white offcanvas-header border-bottom">
+              <div className="bg-success text-white offcanvas-header">
                 <h5
                   className="offcanvas-title m-0 p-0"
                   id="offcanvasNavbarLabel"
                 >
                   <NavLink to="/" className="navbar-brand fw-bold">
                     <img
-                      style={{ width: "120px", height: "50px" }}
+                      style={{ width: "120px", height: "58px" }}
                       src={logo}
                       alt="logo"
                     />
