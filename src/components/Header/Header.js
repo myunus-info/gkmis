@@ -1,9 +1,18 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "./../images/logo.png";
 import "./Header.css";
 
 const Header = () => {
+  const navLinkStyles = ({ isActive }) => ({
+    color: isActive ? "yellow" : "#fff",
+    fontWeight: isActive ? "600" : "400",
+  });
+  // const dropdownLinkStyles = ({ isActive }) => ({
+  //   color: !isActive ? "yellow" : "#fff",
+  //   fontWeight: !isActive ? "600" : "400",
+  // });
+
   return (
     <>
       <div style={{ marginBottom: "5.65rem" }}>
@@ -57,147 +66,150 @@ const Header = () => {
                 {/* Sidebar-Header */}
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
                   <li className="nav-item">
-                    <Link
-                      style={{ color: "#fff" }}
+                    <NavLink
+                      style={navLinkStyles}
                       className="nav-link active"
                       aria-current="page"
                       to="/"
                     >
                       Home
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      style={{ color: "#fff" }}
+                    <NavLink
+                      style={navLinkStyles}
                       className="nav-link active"
                       aria-current="page"
                       to="/about"
                     >
                       About
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      style={{ color: "#fff" }}
+                    <NavLink
+                      style={navLinkStyles}
                       className="nav-link active"
                       aria-current="page"
                       to="/admission"
                     >
                       Admission
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item dropdown">
-                    <Link
+                    <NavLink
                       className="nav-link dropdown-toggle"
-                      style={{ color: "#fff" }}
+                      // style={dropdownLinkStyles}
                       to="/"
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       Departments
-                    </Link>
+                    </NavLink>
                     <ul className="dropdown-menu">
                       <li>
-                        <Link className="dropdown-item" to="/english-bgs">
+                        <NavLink className="dropdown-item" to="/english-bgs">
                           English &amp; BGS
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
                         <hr className="dropdown-divider" />
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/math-science">
+                        <NavLink className="dropdown-item" to="/math-science">
                           Math &amp; Science
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
                         <hr className="dropdown-divider" />
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/islamic-studies">
+                        <NavLink
+                          className="dropdown-item"
+                          to="/islamic-studies"
+                        >
                           Islamic Studies
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
                         <hr className="dropdown-divider" />
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/bangla">
+                        <NavLink className="dropdown-item" to="/bangla">
                           Bangla
-                        </Link>
+                        </NavLink>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      style={{ color: "#fff" }}
+                    <NavLink
+                      style={navLinkStyles}
                       className="nav-link active"
                       aria-current="page"
                       to="/notice"
                     >
                       Notice
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      style={{ color: "#fff" }}
+                    <NavLink
+                      style={navLinkStyles}
                       className="nav-link active"
                       aria-current="page"
                       to="/blog"
                     >
                       Blog
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item dropdown">
-                    <Link
+                    <NavLink
                       className="nav-link dropdown-toggle"
-                      style={{ color: "#fff" }}
+                      style={navLinkStyles}
                       to="/"
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       Gallery
-                    </Link>
+                    </NavLink>
                     <ul className="dropdown-menu">
                       <li>
-                        <Link className="dropdown-item" to="/photo-gallery">
+                        <NavLink className="dropdown-item" to="/photo-gallery">
                           Photo Gallery
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
                         <hr className="dropdown-divider" />
                       </li>
                       <li>
-                        <Link
+                        <NavLink
                           className="dropdown-item"
                           to="https://www.youtube.com/channel/UC0fu3eYEHm9wpF-1lhrNOKw"
                         >
                           Video Gallery
-                        </Link>
+                        </NavLink>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      style={{ color: "#fff" }}
+                    <NavLink
+                      style={navLinkStyles}
                       className="nav-link active"
                       aria-current="page"
                       to="/career"
                     >
                       Career
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      style={{ color: "#fff" }}
+                    <NavLink
+                      style={navLinkStyles}
                       className="nav-link active"
                       aria-current="page"
                       to="/contact"
                     >
                       Contact
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
