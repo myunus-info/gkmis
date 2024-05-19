@@ -14,7 +14,7 @@ const PhotoGallery = () => {
           <div className="col">
             <div className={classes["gallery-wrapper"]}>
               {images.map(({ img, id }) => (
-                <div>
+                <div key={id}>
                   <img src={img} alt={id} />
                 </div>
               ))}

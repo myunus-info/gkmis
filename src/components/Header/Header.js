@@ -8,16 +8,12 @@ const Header = () => {
     color: isActive ? "yellow" : "#fff",
     fontWeight: isActive ? "600" : "400",
   });
-  // const dropdownLinkStyles = ({ isActive }) => ({
-  //   color: !isActive ? "yellow" : "#fff",
-  //   fontWeight: !isActive ? "600" : "400",
-  // });
 
   return (
     <>
       <div style={{ marginBottom: "5.65rem" }}>
         <nav className="navbar navbar-expand-lg bg-success fixed-top m-0 p-0">
-          <div className="container-fluid">
+          <div className="container">
             <NavLink to="/" className="navbar-brand fw-bold">
               <img
                 style={{ width: "120px", height: "80px" }}
@@ -37,7 +33,7 @@ const Header = () => {
             </button>
             <div
               className="sidebar offcanvas offcanvas-start"
-              tabindex="-1"
+              tabIndex="-1"
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
             >
@@ -97,8 +93,8 @@ const Header = () => {
                   </li>
                   <li className="nav-item dropdown">
                     <NavLink
+                      style={{ color: "#fff" }}
                       className="nav-link dropdown-toggle"
-                      // style={dropdownLinkStyles}
                       to="/"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -164,7 +160,7 @@ const Header = () => {
                   <li className="nav-item dropdown">
                     <NavLink
                       className="nav-link dropdown-toggle"
-                      style={navLinkStyles}
+                      style={{ color: "#fff" }}
                       to="/"
                       role="button"
                       data-bs-toggle="dropdown"
